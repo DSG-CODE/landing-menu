@@ -1,0 +1,61 @@
+/* Componente Widgets */
+.widgets{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    padding-top: 50px;
+
+    &__items{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-decoration:none;
+    }
+
+    &__content-img{
+        width: 30%;
+        height: 100%;
+    }
+
+    .widgets__content{
+        width: 70%;
+    }
+
+    &__img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    &__number{
+        color: $grayish-blue;
+        font-size: 1.5em;
+    }
+
+    &__title{
+        font-weight: 700;
+        padding-top: 10px;
+        color: $very-dark;
+        transition: all .3s;
+        &:hover{
+            color: $soft-red;
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .widgets{
+        grid-template-columns: 1fr;
+        padding-bottom: 3rem;
+        row-gap: 20px;
+
+        &__items{
+            place-items: center;
+        }
+
+        &__content{
+            padding-left: 20px;
+        }
+    }
+}

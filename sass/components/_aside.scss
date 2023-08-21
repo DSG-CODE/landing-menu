@@ -1,0 +1,24 @@
+/* Componente Side */
+.aside{
+    grid-column: 3/4;
+    background-color: $very-dark;
+    color: $off-white;
+    padding: 20px;
+
+    &__subtitle{
+        font-size: 1rem;
+    }
+
+    &__item{
+        padding: 15px 0;
+        &:nth-of-type(1), &:nth-of-type(2){
+            border-bottom: .5px solid rgba($color: #fff, $alpha:0.4);
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .aside{
+        grid-column: 1/3;
+    }
+}

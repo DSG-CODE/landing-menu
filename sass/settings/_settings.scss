@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Containers */
+.container{
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Contendor Main */
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+@media screen and (max-width:760px) {
+    .main{
+        grid-template-columns: 1fr
+    }
+}
+
+/* Tipography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto:wght@300&display=swap');
+
+$font-inter:'Inter', sans-serif;
+
+/* Colors Primary */
+$soft-orange:  hsl(35, 77%, 62%);
+$soft-red:  hsl(5, 85%, 63%);
+/* Colors Neutrals */
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish: hsl(236, 13%, 42%);
+$very-dark: hsl(240, 100%, 5%);
